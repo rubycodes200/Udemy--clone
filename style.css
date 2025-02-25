@@ -18,6 +18,10 @@ font-family:'Gabarito',sans-serif;
     border-bottom: solid 1px;
     gap: 10px;
     padding-right: 30px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
 
 }
 
@@ -38,6 +42,7 @@ font-family:'Gabarito',sans-serif;
     border: none;
     width: 50%;
     font-size:16px ;
+    background-color: transparent;
 
     
 
@@ -55,6 +60,30 @@ font-family:'Gabarito',sans-serif;
 .navbar__s3{
     display: flex;
     gap: 15px;
+}
+
+
+.mylearning{
+    position: relative;
+    cursor: pointer;
+}
+
+.mylearning__popup{
+
+    position: absolute;
+    border: solid black 1px;
+    background-color: white;
+    padding: 20px;
+    width: 100px;
+    top: 150%;
+    right: 0;
+    display: none;
+
+
+    
+}
+.mylearning:hover .mylearning__popup{
+    display: block;
 }
 .categories{
     display: flex;
@@ -77,6 +106,22 @@ font-family:'Gabarito',sans-serif;
     border-radius: 30px;
     padding: 5px;
 
+}
+.sale-image{
+    position: relative;
+
+
+}
+
+.sale-image__offer{
+
+    width: 25%;
+    border: solid black 2px;
+    background-color: white;
+    position: absolute;
+    padding: 2px;
+    top: 10%;
+    left: 10%;
 }
 .sale-image img{
     width: 100%
